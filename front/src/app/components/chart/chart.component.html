@@ -1,0 +1,32 @@
+
+
+  <div class="contenedor">
+
+
+    <header class="navbar">
+
+      <h3 class="titulo">Graphics Generator</h3>
+
+      <a (click)="home($event)">Inicio</a>
+
+      <a (click)="misGraficas($event)">Mis gráficas</a>
+
+      <button (click)="login($event)" id="login">Iniciar Sesión</button>
+
+      <button (click)="cerrarSesion($event)" class="close" id="close">Cerrar Sesión</button>
+
+    </header>
+
+
+    
+
+
+          <h1 class="titulo2">{{info['titulo']}}</h1>
+
+
+          <canvas id="myChart"></canvas>
+    
+      
+  
+  
+  </div>

@@ -1,0 +1,32 @@
+
+
+  <div class="contenedor">
+
+
+    <header class="navbar">
+
+      <h3 class="titulo">Graphics Generator</h3>
+
+      <a>Inicio</a>
+
+      <a (click)="misGraficas($event)">Mis gráficas</a>
+
+      <button (click)="login($event)" id="login">Iniciar Sesión</button>
+
+      <button (click)="cerrarSesion($event)" class="close" id="close">Cerrar Sesión</button>
+
+    </header>
+
+    <main class="bienvenido">
+
+      <h1>Bienvenido al generador de gráficas <i>{{userSession}}</i></h1>
+
+      <h4>Este sitio web te ayuda a crear tus propias gráficas en simples pasos :)</h4>
+
+      <button (click)="misGraficas($event)">Ver mis gráficas</button>
+
+    </main>
+  
+  
+  
+  </div>

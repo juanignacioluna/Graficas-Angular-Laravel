@@ -1,0 +1,84 @@
+
+@import "variables.less";
+
+@import "mixins.less";
+
+
+.contenedor{
+
+    color: black;
+    font-family: @fontContenedor;
+
+
+    width: 99%;
+    margin: 0px auto;
+
+
+    .grid(20px, 4, 1fr, 3, auto);
+    
+
+    grid-template-areas:    "navbar         navbar              navbar              navbar"
+                            "titulo         titulo              titulo              titulo"
+                            "canvas         canvas              canvas              canvas";
+
+    button{
+        .buttonNormal;
+        color: #f2f2f2;
+    }
+
+    canvas{
+        grid-area: canvas;
+        justify-self: center;
+        max-width: 750px;
+        max-height: 750px;
+    }
+
+    .titulo2{
+        grid-area: titulo;
+        text-align: center;
+    }
+
+    .navbar{
+        grid-area: navbar;
+        background: #343A40;
+        max-height: 65px;
+        color: white;
+        
+        *{
+            margin-right: 15px;
+        }
+        
+
+        a{
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+            &:hover{
+                color: silver;
+            }
+        }
+
+        .titulo{
+            margin-left: 10px;
+            display:inline-block; 
+        }
+
+        .close{
+            background-color: @colorClose;
+            border-color: darken(@colorClose, 5%);
+            &:hover{
+                background-color: darken(@colorClose, 10%);
+                border-color: darken(@colorClose, 8%);
+            }
+            &:focus{
+                box-shadow: @shadowFocusClose;
+            }
+        }
+
+    }
+
+
+}
+
+
+.responsive;

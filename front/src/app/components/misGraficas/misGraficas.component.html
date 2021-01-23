@@ -1,0 +1,43 @@
+
+
+  <div class="contenedor">
+
+
+    <header class="navbar">
+
+      <h3 class="titulo">Graphics Generator</h3>
+
+      <a (click)="home($event)">Inicio</a>
+
+      <a>Mis gráficas</a>
+
+      <button (click)="login($event)" id="login">Iniciar Sesión</button>
+
+      <button (click)="cerrarSesion($event)" class="close" id="close">Cerrar Sesión</button>
+
+    </header>
+
+
+    
+
+        <div class="titulo2">
+          <h1>Mis Graficas</h1>
+          <h2 class="aviso">Para visualizar las gráficas, por favor inicie sesión.</h2>
+        </div>
+          
+          
+
+          <div class="cards">
+
+            <div class="plus card" (click)="new($event)">
+
+              <p>Agregar nueva gráfica</p>
+  
+              <img src="assets/plus.png" width="125px">
+  
+            </div>
+
+
+          </div>
+
+  </div>

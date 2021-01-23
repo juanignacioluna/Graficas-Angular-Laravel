@@ -1,0 +1,71 @@
+
+
+  <div class="contenedor">
+
+
+    <header class="navbar">
+
+      <h3 class="titulo">Graphics Generator</h3>
+
+      <a (click)="home($event)">Inicio</a>
+
+      <a (click)="misGraficas($event)">Mis gráficas</a>
+
+      <button (click)="login($event)" id="login">Iniciar Sesión</button>
+
+      <button (click)="cerrarSesion($event)" class="close" id="close">Cerrar Sesión</button>
+
+    </header>
+
+
+    
+
+
+      <h1 class="titulo2">Agregar nueva gráfica</h1>
+
+      <div class="infoGeneral">
+
+          <h3>No utilizar eñes, ni caracteres especiales. Máximo 50 campos.</h3>
+
+          <br> <br>
+
+          <input id="titulo" type="text" placeholder="Titulo">
+
+          <br> <br>
+      
+          <select id="tipos">
+            <option value="Line">Line</option>
+            <option value="Bar">Bar</option>
+            <option value="Pie">Pie</option>
+            <option value="Polar Area">Polar Area</option>
+            <option value="Doughnut">Doughnut</option>
+          </select>
+
+          <br> <br>
+
+          <input placeholder="Cantidad de campos" type="number" name="cantidad" id="cantidad">
+
+          <button (click)="okNro($event)" class="okNro">OK</button>
+
+
+      </div>
+
+
+      <div class="fila"></div>
+
+
+      <button (click)="add($event)" class="add">Agregar</button>
+
+
+      <div class="side1"></div>
+
+      <div class="side2"></div>
+
+
+
+
+    
+      
+  
+  
+  </div>
